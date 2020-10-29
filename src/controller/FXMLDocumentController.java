@@ -3,15 +3,15 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
  */
-package DnDFx.Controller;
+package controller;
 // ALT + INS 
 // This seems to import from other classes !!
 
-import DnDFx.model.actions.Battle;
-import DnDFx.model.entities.Dice;
-import DnDFx.model.entities.Character;
-import DnDFx.model.entities.Weapon;
-import DnDFx.util.XMLParser;
+import model.actions.Battle;
+import model.entities.Dice;
+import model.entities.Character;
+import model.entities.Weapon;
+import util.XMLParser;
 import java.awt.AWTException;
 import java.net.URL;
 import java.util.LinkedList;

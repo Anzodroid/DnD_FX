@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DnDFx.util;
+package util;
 
 import java.io.File;
 import javax.xml.parsers.DocumentBuilder;
@@ -16,8 +16,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-import DnDFx.model.entities.Weapon;
-import DnDFx.model.entities.Monster;
+import model.entities.Weapon;
+import model.entities.Monster;
 import java.util.LinkedList;
 
 /**
@@ -36,7 +36,7 @@ public class XMLParser {
 
         try {
             
-            file = new File("src/DnDFx/resources/compendium.xml");
+            file = new File("src/application/resources/compendium.xml");
             dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
             doc = db.parse(file);

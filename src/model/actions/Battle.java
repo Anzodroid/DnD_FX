@@ -1,6 +1,6 @@
-package DnDFx.model.actions;
+package model.actions;
 
-import DnDFx.model.entities.Dice;
+import model.entities.Dice;
 
 /**
  *

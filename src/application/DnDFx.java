@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DnDFx;
+package application;
 
-import DnDFx.util.XMLParser;
+import java.io.File;
 import javafx.application.Application;
 import static javafx.fxml.FXMLLoader.load;
 import javafx.scene.Parent;
@@ -21,7 +21,8 @@ public class DnDFx extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = load(getClass().getResource("Resources/FXMLDocument.fxml"));
+        
+        Parent root = load(getClass().getResource("resources/FXMLDocument.fxml"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

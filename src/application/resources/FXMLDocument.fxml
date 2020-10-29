@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchoxrPane" prefHeight="632.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DnDFx.Controller.FXMLDocumentController">
+<AnchorPane id="AnchoxrPane" prefHeight="632.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
     <children>
       <ImageView fx:id="Background" fitHeight="632.0" fitWidth="888.0" opacity="0.81" pickOnBounds="true">
          <image>
