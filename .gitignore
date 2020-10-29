@@ -13,3 +13,6 @@ nb-configuration.xml
 *.jar
 *.war
 *.ear
+
+# OSX garbage
+.DS_Store
