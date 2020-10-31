@@ -4,8 +4,6 @@
 * and open the template in the editor.
  */
 package controller;
-// ALT + INS 
-// This seems to import from other classes !!
 
 import model.actions.Battle;
 import model.entities.Dice;
@@ -57,6 +55,7 @@ public class FXMLDocumentController implements Initializable {
     private Character c1;
     private Character c2;
 
+    
     public FXMLDocumentController() {
         LinkedList<Weapon> weaponList = parse.getWeapons();
         for (Weapon w : weaponList) {
@@ -66,11 +65,7 @@ public class FXMLDocumentController implements Initializable {
         c2 = new Character("Goblin", 2, -1, 15, 7, 2, fxWeaponList.get(1));
     }
 
-    private Weapon getAnyWeapon() {
-        Weapon w = new Weapon("Club", 4, 1);
-        return w;
-    }
-
+    
     @FXML
     private Label label;
     @FXML

@@ -114,11 +114,19 @@ public class XMLParser {
             System.out.println("Failed getting Monsters from .xml");
             e.printStackTrace();
         }
+     
         
-        for (Monster m : monsterList) {
+        monsterList.stream().forEach(m -> {
             System.out.println(m.getName());
-            System.out.println(m.getSize());
-        }
+            System.out.println(m.getSize());            
+        });
+        
+        
+//        monsterList.stream().map(m -> {
+//            System.out.println(m.getName());
+//            System.out.println(m.getSize());
+//            return m;
+//        });
 
         return monsterList;
     }

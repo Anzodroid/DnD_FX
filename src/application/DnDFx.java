@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package application;
-
-import java.io.File;
 import javafx.application.Application;
 import static javafx.fxml.FXMLLoader.load;
 import javafx.scene.Parent;
@@ -32,6 +30,7 @@ public class DnDFx extends Application {
     public static void main(String[] args) {
         launch(args);
         
+        // Afer JavaFX is closed kill off Java process
         System.exit(0);
     }
     
