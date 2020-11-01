@@ -201,7 +201,7 @@ public class FXMLDocumentController implements Initializable {
             if (c2.getCurrentHp() < 1) {
                 textArea2.appendText("### " + c2.getName() + " is Dead ###" + "\n");
                 army2 = army2 - 1;
-//                c2.setCurrentHp(hp2);
+                c2.setCurrentHp(c2.getMaxHp());
                 A2Remaining.setText(Integer.toString(army2));
             } else {
                 // DO NOTHING
@@ -246,7 +246,7 @@ public class FXMLDocumentController implements Initializable {
             if (c1.getCurrentHp() < 1) {
                 textArea.appendText("### " + c1.getName() + " is Dead ###" + "\n");
                 army1 = army1 - 1;
-//                c1.setHp(hp1);
+                c1.setCurrentHp(c1.getMaxHp());
                 A1Remaining.setText(Integer.toString(army1));
             } else {
                 // DO NOTHING

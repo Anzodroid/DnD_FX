@@ -6,6 +6,8 @@
 package model.entities;
 
 import static java.lang.Math.random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -63,6 +65,39 @@ public class Dice {
                 return 0;
         }
     }
+
     
+    public static int rollDiceEqn(String roll) {
+        Pattern pattern = Pattern.compile("([1-9]+)d([4,6,8,10,12,20]+)\\+?([0-9]){0,1}"); 
+        Matcher m = pattern.matcher(roll); 
+        int result = 0;
+        while (m.find()) {
+            
+            System.out.println(m.group(0));
+            int diceNumber = Integer.parseInt(m.group(1));
+            int diceType = Integer.parseInt(m.group(2));
+            int dicePlus;
+            
+            try {
+                dicePlus = Integer.parseInt(m.group(3));
+            } catch (NumberFormatException e) {
+                dicePlus = 0;
+            }
+            
+            
+            for (int i = 0; i < diceNumber; i++) {
+                int rollResult = Dice.rollSidedDice(diceType);
+                System.out.println("Rolling: d" + diceType + " Result: " + rollResult);
+                result = result + rollResult;
+            }
+            result = result + dicePlus;
+        }
+        return result;
+    }
+    
+    
+    public static void main(String[] args) {
+        System.out.println(Dice.rollDiceEqn("(1d20+5) 2d6 1d4 1d10"));
+    }
     
 }
